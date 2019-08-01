@@ -12,7 +12,6 @@ public class DeliveryCompleted {
     private String deliveryState;
 
     public DeliveryCompleted(){
-        this.setType(this.getClass().getSimpleName());
     }
     public String getType() {
         return type;
