@@ -11,8 +11,6 @@ public class DeliveryCompleted {
     private String deliveryAddress;
     private String deliveryState;
 
-    public DeliveryCompleted(){
-    }
     public String getType() {
         return type;
     }
