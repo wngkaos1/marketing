@@ -1,23 +1,14 @@
 package com.example.template;
 
-public class SurveyCompleted {
+public class SurveyCompleted  extends AbstractEvent{
 
-    private String type ;
     private String stateMessage = "설문이 완료됨";
     private String customerName;
     private String surveyMessage;
 
 
     public SurveyCompleted(){
-        this.setType(this.getClass().getSimpleName());
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
+        this.setEventType(this.getClass().getSimpleName());
     }
 
     public String getStateMessage() {

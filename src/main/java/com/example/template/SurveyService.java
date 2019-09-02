@@ -28,12 +28,12 @@ public class SurveyService {
         try {
             deliveryCompleted = objectMapper.readValue(message, DeliveryCompleted.class);
 
-            System.out.println(" #### type = " + deliveryCompleted.getType());
+            System.out.println(" #### type = " + deliveryCompleted.getEventType());
 
             /**
              * 배송 완료 이벤트시 설문조사 시작함
              */
-            if( deliveryCompleted.getType().equals(DeliveryCompleted.class.getSimpleName())){
+            if( deliveryCompleted.getEventType().equals(DeliveryCompleted.class.getSimpleName())){
 
                 Survey survey = new Survey();
                 survey.setCustomerName(deliveryCompleted.getCustomerName());
