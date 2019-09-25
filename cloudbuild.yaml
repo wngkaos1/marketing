@@ -85,4 +85,4 @@ options:
   env:
     #    # location/name of GKE cluster (used by all kubectl commands)
     - CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a
-    - CLOUDSDK_CONTAINER_CLUSTER=oval-plate-253906
+    - CLOUDSDK_CONTAINER_CLUSTER=event-storming-market
